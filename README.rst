@@ -1,9 +1,9 @@
-goofiboot Simple UEFI boot manager
+ressiboot Simple UEFI boot manager
 ----------------------------------
 
-goofiboot is a fork of gummiboot - which is now dead upstream.
+ressiboot is a fork of goofiboot - which is now dead upstream.
 
-This fork is now being used for Solus (and anyone else if they're interested)
+This fork is now being used for RESS Linux (and anyone else if they're interested)
 because we need the full features of gummiboot, outside of the context of
 systemd.
 
@@ -14,21 +14,21 @@ supported". As such, this fork becomes a separate and independent bootloader.
 License
 =======
 
-goofiboot is available under the same license as gummiboot, the GNU
+ressiboot is available under the same license as goofiboot, the GNU
 Lesser General Public License 2.1 (LGPL-2.1)
 
 About
 =====
 
-goofiboot executes EFI images. The default entry is selected by a configured
+ressiboot executes EFI images. The default entry is selected by a configured
 pattern (glob) or an on-screen menu.
 
-goofiboot operates on the EFI System Partition (ESP) only. Configuration
+ressiboot operates on the EFI System Partition (ESP) only. Configuration
 file fragments, kernels, initrds, other EFI images need to reside on the
 ESP. Linux kernels must be built with CONFIG_EFI_STUB to be able to be
 directly executed as an EFI image.
 
-goofiboot reads simple and entirely generic configuration files; one file
+ressiboot reads simple and entirely generic configuration files; one file
 per boot entry to select from.
 
 Pressing Space (or most other) keys during bootup will show an on-screen
